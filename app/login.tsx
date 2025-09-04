@@ -7,7 +7,7 @@ import {
   Text,
   TextInput,
   TouchableOpacity,
-  View
+  View,
 } from "react-native";
 import { auth } from "./firebaseConfig";
 
@@ -67,10 +67,10 @@ export default function Login() {
 
       <Text style={styles.footerText}>
         Don’t have an account?
-        <Text
-          style={styles.link}
-          onPress={() => router.push("/register")}
-        >{" "}Sign up</Text>
+        <Text style={styles.link} onPress={() => router.push("/register")}>
+          {" "}
+          Sign up
+        </Text>
       </Text>
     </View>
   );
